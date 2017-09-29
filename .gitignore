@@ -2,6 +2,6 @@
 #
 # gitignore contributors: Cody Lee Global/Xcode.gitignore, 
 ## User settings
-xcuserdata/
+Proto-UIBitton/xcuserdata/
 *.DS
 *.ds
