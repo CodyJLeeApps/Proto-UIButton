@@ -1,24 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proto_UIButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-gA-6i9" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fun-With-Extensions" translatesAutoresizingMaskIntoConstraints="NO" id="sOn-lm-neU">
+                                        <rect key="frame" x="37" y="50" width="300" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="F3b-4n-Ne6"/>
+                                            <constraint firstAttribute="height" constant="90" id="RCA-kF-zUW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sOn-lm-neU" firstAttribute="top" secondItem="BRl-gA-6i9" secondAttribute="top" constant="50" id="SRD-EM-sPt"/>
+                                    <constraint firstItem="sOn-lm-neU" firstAttribute="centerX" secondItem="BRl-gA-6i9" secondAttribute="centerX" id="naC-DG-eJg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Vhf-jd-PA5" userLabel="Btn Stack View">
+                                <rect key="frame" x="130" y="196" width="115" height="275"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdV-cs-p5U" customClass="RectangleButton" customModule="Proto_UIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.56078431370000004" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="hk3-IO-FWw"/>
+                                            <constraint firstAttribute="height" constant="50" id="wbL-ig-8tn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Original">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="origBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VB-Tg-UTA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38E-FG-RdU" customClass="RectangleButton" customModule="Proto_UIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="115" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.56078431370000004" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JkZ-NX-RY2"/>
+                                            <constraint firstAttribute="width" constant="115" id="m6R-Ek-plz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Wiggle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wiggleBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJF-Hc-9XX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywq-In-6Vm" customClass="RectangleButton" customModule="Proto_UIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="115" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.56078431370000004" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LPN-P7-hyE"/>
+                                            <constraint firstAttribute="width" constant="115" id="XMm-Zy-bOc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Colorize">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorizeBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HdD-7q-kLm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5c-ex-dho" customClass="RectangleButton" customModule="Proto_UIButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="225" width="115" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.56078431370000004" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QfM-My-6e8"/>
+                                            <constraint firstAttribute="width" constant="115" id="ddW-ky-d4o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Dim">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dimBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1H-Fo-4Ax"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BRl-gA-6i9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2MT-ty-7fF"/>
+                            <constraint firstItem="Vhf-jd-PA5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AL1-eN-11a"/>
+                            <constraint firstItem="BRl-gA-6i9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fr8-UH-t3t"/>
+                            <constraint firstItem="Vhf-jd-PA5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PVz-h8-ydM"/>
+                            <constraint firstItem="BRl-gA-6i9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RRM-Tc-Ho0"/>
+                            <constraint firstItem="BRl-gA-6i9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="osZ-QY-I0K"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="colorizeBtn" destination="Ywq-In-6Vm" id="V46-Rv-7xt"/>
+                        <outlet property="dimBtn" destination="E5c-ex-dho" id="sGj-FY-6pf"/>
+                        <outlet property="origBtn" destination="sdV-cs-p5U" id="gdh-ye-vnd"/>
+                        <outlet property="wiggleBtn" destination="38E-FG-RdU" id="JWA-WM-KZe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fun-With-Extensions" width="850" height="111"/>
+    </resources>
 </document>

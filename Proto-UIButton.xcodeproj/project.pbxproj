@@ -12,6 +12,10 @@
 		C32EC3F71F7D953C00A62A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32EC3F51F7D953C00A62A96 /* Main.storyboard */; };
 		C32EC3F91F7D953C00A62A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32EC3F81F7D953C00A62A96 /* Assets.xcassets */; };
 		C32EC3FC1F7D953C00A62A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32EC3FA1F7D953C00A62A96 /* LaunchScreen.storyboard */; };
+		C32EC4041F7D96C000A62A96 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EC4031F7D96C000A62A96 /* UIButtonExt.swift */; };
+		C32EC4061F7D96CB00A62A96 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EC4051F7D96CB00A62A96 /* Helpers.swift */; };
+		C32EC4081F7D9A2400A62A96 /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EC4071F7D9A2400A62A96 /* RectangleButton.swift */; };
+		C32EC40A1F7D9A3E00A62A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EC4091F7D9A3E00A62A96 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C32EC3F81F7D953C00A62A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32EC3FB1F7D953C00A62A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32EC3FD1F7D953C00A62A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32EC4031F7D96C000A62A96 /* UIButtonExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		C32EC4051F7D96CB00A62A96 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C32EC4071F7D9A2400A62A96 /* RectangleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
+		C32EC4091F7D9A3E00A62A96 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		C32EC3F01F7D953C00A62A96 /* Proto-UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				C32EC4091F7D9A3E00A62A96 /* Constants.swift */,
+				C32EC4071F7D9A2400A62A96 /* RectangleButton.swift */,
+				C32EC4051F7D96CB00A62A96 /* Helpers.swift */,
+				C32EC4031F7D96C000A62A96 /* UIButtonExt.swift */,
 				C32EC3F11F7D953C00A62A96 /* AppDelegate.swift */,
 				C32EC3F31F7D953C00A62A96 /* ViewController.swift */,
 				C32EC3F51F7D953C00A62A96 /* Main.storyboard */,
@@ -137,7 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32EC3F41F7D953C00A62A96 /* ViewController.swift in Sources */,
+				C32EC4041F7D96C000A62A96 /* UIButtonExt.swift in Sources */,
 				C32EC3F21F7D953C00A62A96 /* AppDelegate.swift in Sources */,
+				C32EC4061F7D96CB00A62A96 /* Helpers.swift in Sources */,
+				C32EC4081F7D9A2400A62A96 /* RectangleButton.swift in Sources */,
+				C32EC40A1F7D9A3E00A62A96 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
