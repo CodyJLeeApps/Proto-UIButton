@@ -1,0 +1,7 @@
+# Xcode
+#
+# gitignore contributors: Cody Lee Global/Xcode.gitignore, 
+## User settings
+xcuserdata/
+*.DS
+*.ds
